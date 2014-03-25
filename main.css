@@ -1,0 +1,23 @@
+/* Using a tag name to style all div elements. */
+div {
+    padding: 30px;
+}
+
+/* We can use ids to specify single elements, as well. */
+#content {
+    border: 10px solid #000; /* Google "hexidecimal notation CSS" for colours. */
+    border: 10px solid rgb(0,0,0); /* This is equivalent to the above. */
+}
+
+p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Here we use a class, which works similarly to an id. Unlike ids though, 
+ * classes don't have to be unique. */
+p.italic {
+    font-style: italic;
+    font-weight: normal;
+}
+    
