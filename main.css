@@ -1,23 +1,41 @@
-/* Using a tag name to style all div elements. */
-div {
-    padding: 30px;
+html {
+    min-width: 800px;
 }
 
-/* We can use ids to specify single elements, as well. */
-#content {
-    border: 10px solid #000; /* Google "hexidecimal notation CSS" for colours. */
-    border: 10px solid rgb(0,0,0); /* This is equivalent to the above. */
+body {
+    background: #000;
 }
 
-p {
-    font-weight: bold;
-    font-size: 16px;
+#myCanvas {
+    position: absolute;
+    top: -webkit-calc(50% - 300px);
+    left: -webkit-calc(50% - 400px);
+    background: white;
+    box-shadow: 0 0 10px 0 rgb(0,0,0);
+    z-index: 1;
 }
 
-/* Here we use a class, which works similarly to an id. Unlike ids though, 
- * classes don't have to be unique. */
-p.italic {
-    font-style: italic;
-    font-weight: normal;
+#title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -200px;;
+    width: 100%;
+    font-size: 280px;
+    font-weight: 800;
+    font-family: Lato;
+    color: #fff;
+    text-align: center;
+    vertical-align: top;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-    
+
+@media screen and (min-width: 950px) {
+    #title {
+        font-size: 320px !important;
+    }
+}
