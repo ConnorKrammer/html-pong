@@ -9,7 +9,11 @@ body {
 #myCanvas {
     position: absolute;
     top: -webkit-calc(50% - 300px);
+    top: -moz-calc(50% - 300px);
+    top: calc(50% - 300px);
     left: -webkit-calc(50% - 400px);
+    left: -moz-calc(50% - 400px);
+    left: calc(50% - 400px);
     background: white;
     box-shadow: 0 0 10px 0 rgb(0,0,0);
     z-index: 1;
